@@ -72,7 +72,9 @@ export default function Calculadora(){
             <div className="keys">
                 <div className="numbers">
                     {Object.keys(numbers).map((num)=>(
-                        <button key={num} onClick={handleNumberClick}>{num}</button>
+                        <button key={num} onClick={handleNumberClick}>
+                            <span>{num}</span>
+                        </button>
                     ))}
                 </div>
                 <div className="symbols">
